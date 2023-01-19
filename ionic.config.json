@@ -1,0 +1,7 @@
+{
+  "name": "Z1-kitchen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
