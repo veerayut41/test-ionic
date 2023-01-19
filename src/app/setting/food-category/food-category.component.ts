@@ -34,8 +34,8 @@ export class FoodCategoryComponent implements OnInit {
 
   async alertOnDelete() {
     const alert = await this.alertController.create({
-      header: 'ยืนยันการลบ "ไอศกรีม" ออกจากรายการหมวดหมู่ใช่หรือไม่ ?',
-      cssClass: 'custom-alert',
+      cssClass: 'alert-delete',
+      message: 'ยืนยันการลบ "ไอศกรีม" ออกจากหมวดหมู่ใช่หรือไม่ ?',
       buttons: [
         {
           text: 'ยกเลิก',

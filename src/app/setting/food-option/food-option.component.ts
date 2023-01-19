@@ -38,9 +38,7 @@ export class FoodOptionComponent implements OnInit {
         {
           cssClass: 'alert-delete-confirm',
           text: 'ใช่',
-          handler: () => {
-            this.modalCtrl.dismiss();
-          },
+          role: 'cancel'
         },
       ],
     });
