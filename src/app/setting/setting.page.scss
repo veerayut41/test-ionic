@@ -1,0 +1,36 @@
+ion-header {
+  
+}
+
+ion-content {
+    --ion-background-color: #fff;
+    .segment {
+
+      border-radius: 20px;
+      ion-segment {
+        --background: transparent;
+        border-radius: 20px;
+        // background-color: #fff;
+      }
+  
+      ion-segment-button {
+        --indicator-color: #ffbe0c;
+        height: 44px;
+        --border-radius: 20px;
+      }
+  
+      /* Material Design styles */
+      ion-segment-button.md {
+        --color: #000;
+        --color-checked: #000;
+        --indicator-height: 4px;
+      }
+  
+      /* iOS styles */
+      ion-segment-button.ios {
+        --color: #000;
+        --color-checked: #000;
+        --border-radius: 20px;
+      }
+    }
+}

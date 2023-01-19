@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-icon color="dark" (click)="dismiss()" slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <ion-label>แก้ไขรายการอาหาร</ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="card-row">
+    <div class="content-container">
+      <div class="row-img">
+        <div class="img">
+          <ion-thumbnail>
+            <img src="/assets/image/pic9.jpg"
+              alt="img">
+          </ion-thumbnail>
+        </div>
+        <div class="add-img">
+          <ion-label>
+            <h1>เปลี่ยนรูปภาพ</h1>
+          </ion-label>
+        </div>
+      </div>
+      <div class="row-cate">
+        <div class="title">
+          <ion-label>
+            <h2>ชื่อเมนู*</h2>
+          </ion-label>
+        </div>
+        <div class="input">
+          <ion-input placeholder="ระบุชื่ออาหาร"></ion-input>
+        </div>
+        <div class="title">
+          <ion-label>
+            <h2>เลือกหมวดหมู่</h2>
+          </ion-label>
+        </div>
+        <div class="input">
+          <ion-label>
+            <ion-select [interfaceOptions]="customCate" interface="alert" placeholder="เลือกหมวดหมู่">
+              <ion-select-option value="cate">ไม่มี</ion-select-option>
+              <ion-select-option value="smotie">สมูทตี้</ion-select-option>
+              <ion-select-option value="toast">โทส</ion-select-option>
+              <ion-select-option value="begery">เบเกอรี่</ion-select-option>
+              <ion-select-option value="ice">ไอศกรีม</ion-select-option>
+            </ion-select>
+          </ion-label>
+        </div>
+        <div class="title">
+          <ion-label>
+            <h2>ราคา*</h2>
+          </ion-label>
+        </div>
+        <div class="input">
+          <ion-input type="number" placeholder="ระบุราคา"></ion-input>
+        </div>
+        <div class="title">
+          <ion-label>
+            <h2>คำอธิบาย</h2>
+          </ion-label>
+        </div>
+        <div class="input">
+          <ion-input placeholder="ส่วนประกอบ,วิธีการทำ,ปริมาณของอาหารฯ"></ion-input>
+        </div>
+        <div class="title">
+          <ion-label>
+            <h2>ตัวเลือกเสริมที่บันทึกไว้</h2>
+          </ion-label>
+        </div>
+        <div class="input-option">
+          <ion-label>
+            <ion-select [interfaceOptions]="customOptions" interface="alert" placeholder="ไม่มี">
+              <ion-select-option value="cate">ไม่มี</ion-select-option>
+              <ion-select-option value="smotie">ระดับความหวาน</ion-select-option>
+              <ion-select-option value="toast">ระดับความเผ็ด</ion-select-option>
+              <ion-select-option value="begery">Toping</ion-select-option>
+              <ion-select-option value="ice">Size S-M-L</ion-select-option>
+            </ion-select>
+          </ion-label>
+        </div>
+      </div>
+
+    </div>
+    <div class="btn-status">
+      <ion-button (click)="dismiss()" color="success" expand="block" shape="round">บันทึก</ion-button>
+      <ion-button (click)="onDelete()" color="danger" expand="block" shape="round">ลบรายการอาหาร</ion-button>
+    </div>
+  </div>
+
+
+</ion-content>

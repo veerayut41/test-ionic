@@ -1,0 +1,68 @@
+<ion-content>
+
+  <div class="card-row">
+    <div class="content-container">
+      <div class="row-edit">
+        <ion-button color="medium" (click)="show = !show">แก้ไข</ion-button>
+      </div>
+      <div class="row-cate" *ngFor="let i of [1,2,3]">
+        <div class="show-cate" *ngIf="show; else elseBlock">
+          <div class="title">
+            <ion-label>
+              <h2>หมวดหมู่ 1</h2>
+            </ion-label>
+          </div>
+          <div class="cate">
+            <ion-label>
+              <h2>ไอศกรีม</h2>
+            </ion-label>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #elseBlock>
+        <div class="show-edit">
+          <div class="title">
+            <ion-label>
+              <h2>หมวดหมู่ 1</h2>
+            </ion-label>
+          </div>
+          <div class="cate">
+            <ion-label>
+              <h2>ไอศกรีม</h2>
+            </ion-label>
+            <ion-button (click)="alertOnDelete()" color="medium">ลบ</ion-button>
+          </div>
+        </div>
+      </ng-template>
+
+      <div class="input-cate" *ngIf="inputCate">
+        <div class="show-cate">
+          <div class="title">
+            <ion-label>
+              <h2>หมวดหมู่ 1</h2>
+            </ion-label>
+          </div>
+          <div class="cate">
+            <ion-input placeholder="ใส่หมวดหมู่"></ion-input>
+          </div>
+        </div>
+      </div>
+      <div class="add-cate" (click)="insertCate()">
+        <ion-button color="success" fill="clear">
+          <ion-icon name="add" size="small"></ion-icon>
+          เพิ่มหมวดหมู่</ion-button>
+      </div>
+
+    </div>
+    <div class="btn-save">
+
+      <div class="save" *ngIf="inputCate">
+        <ion-button expand="block" shape="round" color="success">บันทึก</ion-button>
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>

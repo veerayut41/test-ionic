@@ -1,0 +1,115 @@
+ion-toolbar {
+  ion-icon {
+    padding-left: 10px;
+  }
+  ion-title {
+    font-size: 24px;
+  }
+}
+
+ion-content {
+  .card-container {
+    margin: 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    filter: drop-shadow(0 0 0.75rem #dadada);
+    .title {
+      .date {
+        border-bottom: 2px dashed #707070;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        ion-label {
+          h2 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 25px;
+      .row-1 {
+        margin-bottom: 20px;
+        .col-content {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+          h2 {
+            font-size: 18px;
+            font-weight: lighter;
+          }
+          h5 {
+            font-size: 16px;
+            font-weight: lighter;
+          }
+        }
+        .col-result {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          h2 {
+            font-size: 18px;
+          }
+          h5 {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .row-2 {
+        margin-bottom: 20px;
+        .col-content {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+          h2 {
+            font-size: 18px;
+            font-weight: lighter;
+          }
+          h5 {
+            font-size: 16px;
+            font-weight: lighter;
+          }
+        }
+        .col-result {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .row-3 {
+        margin-bottom: 15px;
+        .col-result {
+          margin-bottom: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #30b536;
+          h2 {
+            font-size: 18px;
+          }
+          h5 {
+            font-size: 18px;
+          }
+        }
+      }
+      .row-4 {
+        padding-bottom: 20px;
+        .col-result {
+          margin-bottom: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          h2 {
+            font-size: 18px;
+          }
+          h5 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

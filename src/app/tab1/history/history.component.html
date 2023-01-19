@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-icon color="dark" (click)="dismiss()" slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <ion-label>
+        <h1>ดูยอดขายย้อนหลัง</h1>
+      </ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="card-container" *ngFor="let i of [1,2,3]">
+    <div class="title">
+      <div class="date">
+        <ion-label>
+          <h2>วันที่ 14 ธ.ค. 2565</h2>
+        </ion-label>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row-1">
+        <div class="col-content">
+          <ion-label>
+            <h2>จำนวนออเดอร์</h2>
+          </ion-label>
+          <ion-label>
+            <h5>32</h5>
+          </ion-label>
+        </div>
+        <div class="col-content">
+          <ion-label>
+            <h2>จำนวนรายการ</h2>
+          </ion-label>
+          <ion-label>
+            <h5>46</h5>
+          </ion-label>
+        </div>
+        <div class="col-content">
+          <ion-label>
+            <h2>ยกเลิก</h2>
+          </ion-label>
+          <ion-label>
+            <h5>0</h5>
+          </ion-label>
+        </div>
+        <div class="col-result">
+          <ion-label>
+            <h2>ยอดขายทั้งหมด</h2>
+          </ion-label>
+          <ion-label>
+            <h5>4,000</h5>
+          </ion-label>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="col-content">
+          <ion-label>
+            <h2>ให้คนมาส่ง</h2>
+          </ion-label>
+          <ion-label>
+            <h5>3,000</h5>
+          </ion-label>
+        </div>
+        <div class="col-content">
+          <ion-label>
+            <h2>รับเอง</h2>
+          </ion-label>
+          <ion-label>
+            <h5>1,000</h5>
+          </ion-label>
+        </div>
+        <div class="col-content">
+          <ion-label>
+            <h2>ค่าบริการ 1%</h2>
+          </ion-label>
+          <ion-label>
+            <h5>40</h5>
+          </ion-label>
+        </div>
+      </div>
+      <div class="row-3">
+        <div class="col-result">
+          <ion-label>
+            <h2>รายได้หลังหักค่าบริการในระบบ</h2>
+          </ion-label>
+          <ion-label>
+            <h5>+2,960</h5>
+          </ion-label>
+        </div>
+      </div>
+      <div class="row-4">
+        <div class="col-result">
+          <ion-label>
+            <h2>รายได้หลังหักค่าบริการทั้งสิ้น</h2>
+          </ion-label>
+          <ion-label>
+            <h5>+3,960</h5>
+          </ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

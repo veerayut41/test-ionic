@@ -1,0 +1,154 @@
+ion-title {
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+
+ion-content {
+  .message {
+    h4 {
+      margin-top: 15px;
+      margin-left: 20px;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+
+  .btn-order {
+    margin-top: 65px;
+    text-align: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem #dadada);
+    ion-button {
+      width: 219.85px;
+      height: 73.28px;
+    }
+    h4 {
+      font-size: 24px;
+      text-align: center;
+      font-weight: normal;
+      color: #363636;
+    }
+  }
+
+  .status {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    ion-button {
+      width: 359px;
+      height: 48px;
+      ion-select {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .btn-status {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.75rem #dadada);
+    ion-button {
+      width: 359px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      .order {
+        width: 300px;
+        h4 {
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+      .select {
+        ion-icon {
+          height: 30px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.status-btn {
+  display: flex;
+  justify-content: center;
+  ion-button {
+    width: 374px;
+    height: 48px;
+    margin-top: 48px;
+    .title {
+      width: 100%;
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.income {
+  background-color: #fff;
+  margin: 15px;
+  border-radius: 10px;
+  padding-top: 10px;
+  .col-title {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px;
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      ion-label {
+        h2 {
+          font-size: 24px;
+        }
+        h6 {
+          font-size: 13px;
+          border-bottom: 1px solid #ededed;
+        }
+      }
+    }
+    .result {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  .col-result {
+    padding: 0 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .order {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-size: 26px;
+        font-weight: lighter;
+      }
+      h6 {
+        font-size: 26px;
+        padding-right: 30px;
+      }
+    }
+    .list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      h1 {
+        font-size: 26px;
+        font-weight: lighter;
+      }
+      h6 {
+        font-size: 26px;
+        padding-right: 30px;
+      }
+    }
+  }
+}

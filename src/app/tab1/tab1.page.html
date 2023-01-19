@@ -1,17 +1,91 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="light">
     <ion-title>
-      Tab 1
+      <ion-label>
+        <h1>ชื่อร้านอาหาร</h1>
+      </ion-label>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen="true">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-slides pager="true" options='sildeOpts'>
+    <ion-slide>
+      <img src="/assets/image/pic11.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="/assets/image/pic13.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="/assets/image/pic6.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+
+  <div class="message">
+    <ion-label>
+      <h4>ข้อความ</h4>
+    </ion-label>
+
+  </div>
+
+  <div class="btn-order">
+    <ion-button color="light" shape="round" (click)="newOrder()">
+      <ion-label>
+        <h4>คำสั่งซื้อใหม่</h4>
+      </ion-label>
+    </ion-button>
+  </div>
+
+  <div class="status-btn">
+    <ion-button id="status" color="success" shape="round">
+      <div class="title">
+        <ion-label>
+          <h2>{{status}}</h2>
+        </ion-label>
+      </div>
+      <div class="icon">
+        <ion-buttons>
+          <ion-icon color="light" slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-buttons>
+      </div>
+    </ion-button>
+  </div>
+
+  <div class="income">
+    <div class="col-title">
+      <div class="head">
+        <ion-label>
+          <h2>ยอดขายวันนี้</h2>
+        </ion-label>
+        <ion-label>
+          <h6 (click)="openHistory()">ดูยอดขายย้อนหลัง</h6>
+        </ion-label>
+      </div>
+      <div class="result">
+        <ion-label>
+          <h1>฿ 1,275.00</h1>
+        </ion-label>
+      </div>
+    </div>
+    <div class="col-result">
+      <div class="order">
+        <ion-label>
+          <h1>จำนวนออเดอร์</h1>
+        </ion-label>
+        <ion-label>
+          <h6>32</h6>
+        </ion-label>
+      </div>
+      <div class="list">
+        <ion-label>
+          <h1>จำนวนรายการ</h1>
+        </ion-label>
+        <ion-label>
+          <h6>46</h6>
+        </ion-label>
+      </div>
+    </div>
+  </div>
+
 </ion-content>

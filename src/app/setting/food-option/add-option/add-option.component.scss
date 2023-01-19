@@ -1,0 +1,96 @@
+ion-toolbar {
+  ion-icon {
+    padding-left: 10px;
+  }
+}
+
+ion-content {
+  --ion-background-color: #fff;
+  .card-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    .content-container {
+      height: -webkit-fill-available;
+      margin: 15px;
+      padding-top: 20px;
+      .option {
+        .title {
+          padding-bottom: 10px;
+          ion-label {
+            h2 {
+              font-size: 16px;
+              font-weight: lighter;
+            }
+          }
+        }
+        .input {
+          border: 1px solid #30b536;
+          border-radius: 20px;
+          ion-input {
+            margin-left: 20px;
+          }
+        }
+      }
+      .detail {
+        display: flex;
+        margin-top: inherit;
+        .sl-option {
+          width: 120%;
+          .sl-title {
+            padding-bottom: 10px;
+            ion-label {
+              h2 {
+                font-size: 16px;
+                font-weight: lighter;
+              }
+            }
+          }
+          .sl-input {
+            border: 1px solid #30b536;
+            border-radius: 20px;
+            ion-input {
+              margin-left: 20px;
+            }
+          }
+        }
+        .price {
+          padding-left: 20px;
+          .p-title {
+            padding-bottom: 10px;
+            ion-label {
+              h2 {
+                font-size: 16px;
+                font-weight: lighter;
+              }
+            }
+          }
+          .p-input {
+            border: 1px solid #30b536;
+            border-radius: 20px;
+            ion-input {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .add-option {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+    .save {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      ion-button {
+        font-size: 20px;
+        --border-radius: 20px;
+        height: 45px;
+        width: 370px;
+      }
+    }
+  }
+}

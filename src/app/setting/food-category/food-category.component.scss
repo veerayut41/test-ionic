@@ -1,0 +1,132 @@
+ion-content {
+  --ion-background-color: #fff;
+  .card-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    .content-container {
+      margin: 15px;
+      overflow-y: auto;
+      height: -webkit-fill-available;
+      .row-edit {
+        display: flex;
+        justify-content: flex-end;
+        ion-button {
+          width: 60px;
+          height: 25px;
+          --border-radius: 20px;
+        }
+      }
+      .row-cate {
+        margin-top: 15px;
+        .show-cate {
+          .title {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            ion-label {
+              h2 {
+                font-size: 14px;
+                font-weight: lighter;
+              }
+            }
+          }
+          .cate {
+            border: 1px solid #a1a1a1;
+            border-radius: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            ion-label {
+              padding-left: 20px;
+              h2 {
+                font-size: 16px;
+              }
+            }
+            ion-button {
+              --border-radius: 20px;
+              height: 30px;
+              width: 60px;
+            }
+          }
+        }
+
+        .show-edit {
+          .title {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            ion-label {
+              h2 {
+                font-size: 14px;
+                font-weight: lighter;
+              }
+            }
+          }
+          .cate {
+            border: 1px solid #30b536;
+            border-radius: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            ion-label {
+              padding-left: 20px;
+              h2 {
+                font-size: 16px;
+                color: #30b536;
+              }
+            }
+            ion-button {
+              --border-radius: 20px;
+              height: 30px;
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+    .input-cate {
+      .title {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        ion-label {
+          h2 {
+            font-size: 14px;
+            font-weight: lighter;
+          }
+        }
+      }
+      .cate {
+        border: 1px solid #30b536;
+        border-radius: 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .add-cate {
+    text-align: center;
+    margin-top: 20px;
+    ion-button {
+      font-size: 18px;
+    }
+  }
+  .btn-save {
+    margin-bottom: 48px;
+    .save {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      ion-button {
+        width: 340px;
+        height: 45px;
+        font-size: 20px;
+      }
+    }
+  }
+}

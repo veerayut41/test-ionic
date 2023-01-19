@@ -1,0 +1,48 @@
+<ion-content>
+  <div class="card-row">
+    <div class="content-container">
+      <div class="row-edit">
+        <ion-button color="medium" (click)="show = !show">แก้ไข</ion-button>
+      </div>
+      <div class="option" *ngFor="let i of [1,2,3,4]">
+        <div class="option-if" *ngIf="show; else elseBlock">
+          <div class="title">
+            <ion-label>
+              <h2>ตัวเลือกเสริม 1</h2>
+            </ion-label>
+          </div>
+          <div class="option-detail">
+            <ion-label>
+              <h2>ระดับความหวาน</h2>
+            </ion-label>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #elseBlock>
+        <div class="show-edit">
+          <div class="title">
+            <ion-label>
+              <h2>ตัวเลือกเสริม 1</h2>
+            </ion-label>
+          </div>
+          <div class="option-detail">
+            <ion-label>
+              <h2>ระดับความหวาน</h2>
+            </ion-label>
+            <ion-button (click)="onDelete()" color="medium">ลบ</ion-button>
+          </div>
+        </div>
+      </ng-template>
+
+    </div>
+
+    <div class="add-cate">
+      <ion-button (click)="addOption()" color="success" fill="clear">
+        <ion-icon name="add" size="small"></ion-icon>
+        สร้างตัวเลือกเสริมใหม่</ion-button>
+    </div>
+  </div>
+
+
+</ion-content>

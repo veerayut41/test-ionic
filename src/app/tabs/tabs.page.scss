@@ -1,1 +1,19 @@
+ion-tab-bar {
+  height: 60px;
+}
 
+ion-tab-button:hover {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+ion-icon {
+  color: #4a4a4c;
+  height: 29px;
+  width: 29px;
+}
+
+ion-label {
+  color: #4a4a4c;
+  font-size: 15px;
+}

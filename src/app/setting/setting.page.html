@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-icon color="dark" (click)="backToHomePage()" slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <ion-label>ตั้งค่า</ion-label>
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="segment">
+    <ion-segment value="food" (ionChange)="segmaentChange($event)">
+      <ion-segment-button value="food">
+        <ion-label>อาหารทั้งหมด</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="cate">
+        <ion-label>หมวดหมู่</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="option">
+        <ion-label>ตัวเลือกเสริม</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <app-food-list *ngIf="selectSegment == 'food'"></app-food-list>
+  <app-food-category *ngIf="selectSegment == 'cate'"></app-food-category>
+  <app-food-option *ngIf="selectSegment == 'option'"></app-food-option>
+
+</ion-content>

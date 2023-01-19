@@ -1,0 +1,168 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-icon color="dark" (click)="dismiss()" slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <ion-label>
+        <h1>ประวัติการขาย</h1>
+      </ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+
+  <div class="card-row">
+    <div class="content-container">
+      <div class="cus-detail">
+        <div class="row-title">
+          <ion-label>
+            <h2>คนส่งอาหาร</h2>
+          </ion-label>
+        </div>
+        <div class="row-name">
+          <div class="profile">
+            <ion-avatar>
+              <img
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="profile">
+            </ion-avatar>
+          </div>
+          <div class="name">
+            <ion-label>
+              <h2>สมชาย มั่งมี</h2>
+            </ion-label>
+            <ion-label>
+              <h5>(คนส่งอาหาร)</h5>
+            </ion-label>
+          </div>
+          <div class="contact">
+            <ion-icon name="call"></ion-icon>
+          </div>
+        </div>
+        <div class="row-title">
+          <ion-label>
+            <h2>ผู้สั่งซื้อ</h2>
+          </ion-label>
+        </div>
+        <div class="row-name">
+          <div class="profile">
+            <ion-avatar>
+              <img
+                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="profile">
+            </ion-avatar>
+          </div>
+          <div class="name">
+            <ion-label>
+              <h2>Sumalee meerak</h2>
+            </ion-label>
+            <ion-label>
+            </ion-label>
+          </div>
+          <div class="contact">
+            <ion-icon name="call"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <div class="order-detail">
+        <div class="row-track">
+          <ion-label>
+            <h2>#002</h2>
+          </ion-label>
+          <ion-label>
+            <h2>(ทานที่นี่)</h2>
+          </ion-label>
+        </div>
+        <div class="row-order">
+          <div class="no"><ion-label>
+              <h2>X1</h2>
+            </ion-label></div>
+          <div class="order">
+            <ion-label>
+              <h2>โรตีมะพร้าวอ่อน</h2>
+              <h5>โน็ต: ไม่ใส่น้ำตาล</h5>
+            </ion-label>
+          </div>
+          <div class="price">
+            <ion-label>
+              <h2>60.00</h2>
+            </ion-label>
+          </div>
+        </div>
+        <div class="row-order">
+          <div class="no"><ion-label>
+              <h2>X1</h2>
+            </ion-label></div>
+          <div class="order">
+            <ion-label>
+              <h2>โรตีกล้วยหอม ช็อคโกแลต</h2>
+            </ion-label>
+            <ion-label>
+              <h5>โน็ต: ไม่ใส่น้ำตาล</h5>
+            </ion-label>
+          </div>
+          <div class="price">
+            <ion-label>
+              <h2>65.00</h2>
+            </ion-label>
+          </div>
+        </div>
+        <div class="row-order">
+          <div class="no"><ion-label>
+              <h2>X1</h2>
+            </ion-label></div>
+          <div class="order">
+            <ion-label>
+              <h2>ชาไทย</h2>
+            </ion-label>
+            <ion-label>
+              <h5>ปั่น, หวานน้อย</h5>
+            </ion-label>
+          </div>
+          <div class="price">
+            <ion-label>
+              <h2>75.00</h2>
+            </ion-label>
+          </div>
+        </div>
+        <div class="row-order">
+          <div class="no"><ion-label>
+              <h2>X1</h2>
+            </ion-label></div>
+          <div class="order">
+            <ion-label>
+              <h2>นมชมพูชัก</h2>
+            </ion-label>
+            <ion-label>
+              <h5></h5>
+            </ion-label>
+          </div>
+          <div class="price">
+            <ion-label>
+              <h2>75.00</h2>
+            </ion-label>
+          </div>
+        </div>
+        <div class="row-result">
+          <ion-label>
+            <h2>รวมทั้งหมด</h2>
+          </ion-label>
+          <ion-label>
+            <h2>฿275</h2>
+          </ion-label>
+        </div>
+      </div>
+      <div class="note">
+        <ion-label>
+          <h2>โน็ต: ขอชุดช้อนส้อมด้วยนะครับ</h2>
+        </ion-label>
+      </div>
+    </div>
+    <div class="btn-status">
+      <ion-button (click)="dismiss()" shape="round" expand="block" color="success">สำเร็จแล้ว</ion-button>
+    </div>
+  </div>
+
+</ion-content>

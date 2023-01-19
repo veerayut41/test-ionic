@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,35 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  @font-face {
+    font-family: "Anakotmai";
+    src: url("/assets/fonts/desktop/ttf/Anakotmai-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Anakotmai";
+    src: url("/assets/fonts/desktop/ttf/Anakotmai-Light.ttf");
+  }
+
+  @font-face {
+    font-family: "Anakotmai";
+    src: url("/assets/fonts/desktop/ttf/Anakotmai-Medium.ttf");
+  }
+}
+
+//color font for dark mode
+* {
+  --color: #363636;
+}
+
+//background color
+ion-content {
+  --ion-background-color: #e8eaed;
+
+  //card-background
+  ion-card {
+    --ion-background-color: #ffffff;
+  }
+}

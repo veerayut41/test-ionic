@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon color="dark" (click)="dismiss()" slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <ion-label>เพิ่มตัวเลือกเสริม</ion-label>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="card-row">
+    <div class="content-container">
+      <div class="option">
+        <div class="title">
+          <ion-label>
+            <h2>ใส่หัวข้อ</h2>
+          </ion-label>
+        </div>
+        <div class="input">
+          <ion-input placeholder="เช่น ซอส, toping, ระดับความ เผ็ด-หวาน"></ion-input>
+        </div>
+      </div>
+
+      <div class="detail">
+        <div class="sl-option">
+          <div class="sl-title">
+            <ion-label>
+              <h2>ตัวเลือกย่อย 1</h2>
+            </ion-label>
+          </div>
+          <div class="sl-input">
+            <div class="input">
+              <ion-input placeholder="เช่น หวานน้อย"></ion-input>
+            </div>
+          </div>
+        </div>
+        <div class="price">
+          <div class="p-title">
+            <ion-label>
+              <h2>ราคา</h2>
+            </ion-label>
+          </div>
+          <div class="p-input">
+            <div class="input">
+              <ion-input type="number" value="0"></ion-input>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-option">
+        <ion-button color="success" fill="clear">
+          <ion-icon name="add"></ion-icon>
+          เพิ่มตัวเลือกย่อย
+        </ion-button>
+      </div>
+
+    </div>
+    <div class="save">
+      <ion-button (click)="dismiss()" color="success" expand="block">บันทึก</ion-button>
+    </div>
+  </div>
+
+</ion-content>
