@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start" (click)="dissmiss()">
+      <ion-icon color="dark" slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      <ion-label>เพิ่มรายการ</ion-label>
+    </ion-title>
+  </ion-toolbar>
+  <div class="store-name">
+    <ion-label>
+      <h1>Goodday-Ice Cream</h1>
+    </ion-label>
+  </div>
+  <div class="cate-segment">
+
+    <ion-segment [scrollable]="true" value="all" (ionChange)="segmaentChange($event)">
+
+      <ion-segment-button value="all">
+        <ion-label>ส้มตำ</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="roti">
+        <ion-label>ต้ม</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="tea">
+        <ion-label>อาหาร</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="tea milk">
+        <ion-label>เครื่องเคียง</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="coffee">
+        <ion-label>เครื่องดื่ม</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+</ion-header>
+
+<ion-content>
+
+  <!-- <app-category *ngIf="selectSegment == 'all'"></app-category> -->
+  <app-food-list *ngIf="selectSegment == 'all'"></app-food-list>
+
+</ion-content>

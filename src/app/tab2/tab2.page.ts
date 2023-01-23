@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { OrderDetailComponent } from './order-detail/order-detail.component';
 
 @Component({
   selector: 'app-tab2',
@@ -13,13 +14,13 @@ export class Tab2Page {
     private modalCtrl: ModalController
   ) { }
 
-  // async onStatus() {
-  //   const modal = await this.modalCtrl.create({
-  //     component: OrderDetailsComponent
-  //   })
+  async onDetail() {
+    const modal = await this.modalCtrl.create({
+      component: OrderDetailComponent
+    })
 
-  //   return await modal.present();
-  // }
+    return await modal.present();
+  }
 
   // async onTestOneCus() {
   //   const modal = await this.modalCtrl.create({

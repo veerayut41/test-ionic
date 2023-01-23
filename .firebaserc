@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "test-ionic-84893": {
+      "hosting": {
+        "app": [
+          "test-ionic-84893"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "test-ionic-84893"
+  }
+}
