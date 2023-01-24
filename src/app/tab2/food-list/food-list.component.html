@@ -135,9 +135,22 @@
     </ion-modal>
   </div>
 
-  <div class="update">
-    <div class="col-2" *ngIf="updateCart">
-      <ion-button fill="clear" expand="full">อัปเดทคำสั่งซื้อ</ion-button>
+  <div class="update" *ngIf="updateCart">
+    <div class="col-1">
+      <div class="cart">
+        <img src="/assets/icon/icon-shopping.png" alt="">
+        <ion-label>
+          <h2>{{count}}</h2>
+        </ion-label>
+      </div>
+      <div class="price">
+        <ion-label>
+          <h2>{{price*count}}</h2>
+        </ion-label>
+      </div>
+    </div>
+    <div class="col-2">
+      <ion-button fill="clear" (click)="update()">อัปเดทคำสั่งซื้อ</ion-button>
     </div>
   </div>
 

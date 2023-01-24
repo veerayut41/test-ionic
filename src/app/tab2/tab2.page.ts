@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { UpdateModalComponent } from './modal/update-modal/update-modal.component';
 import { OrderDetailComponent } from './order-detail/order-detail.component';
 
 @Component({
@@ -29,7 +30,5 @@ export class Tab2Page {
 
   //   return await modal.present();
   // }
-
-
 
 }

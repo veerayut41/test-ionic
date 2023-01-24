@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { UpdateModalComponent } from '../modal/update-modal/update-modal.component';
 
 @Component({
   selector: 'app-food-list',
@@ -48,5 +49,9 @@ export class FoodListComponent implements OnInit {
     this.updateCart = true;
 
   }
-  
+
+  async update() {
+    this.modal.dismiss();
+  }
+
 }

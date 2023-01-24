@@ -31,6 +31,7 @@ export class OrderDetailComponent implements OnInit {
     const actionSheet = await this.actionSheetCtrl.create({
       buttons: [
         {
+          cssClass: 'alertOrderDetail',
           text: 'แก้ไขคำสั่งซื้อ',
           data: {
             action: 'confirm',
@@ -44,7 +45,7 @@ export class OrderDetailComponent implements OnInit {
         {
           text: 'ยกเลิกคำสั่งซื้อ',
           data: {
-            action: 'delete',
+            action: 'cancel',
           }, handler: () => {
 
             this.cancelOrder();

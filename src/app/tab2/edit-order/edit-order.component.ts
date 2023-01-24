@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController, ModalController } from '@ionic/angular';
 import { AddOrderComponent } from '../add-order/add-order.component';
+import { UpdateModalComponent } from '../modal/update-modal/update-modal.component';
 
 @Component({
   selector: 'app-edit-order',
@@ -54,19 +55,27 @@ export class EditOrderComponent implements OnInit {
   async onDelete() {
     const alert = await this.alertController.create({
       header: 'ยืนยันการลบ "Strawberry sundae" ออกจากรายการใช่หรือไม่ ?',
-      cssClass: 'custom-alert',
+      cssClass: 'deleteEditOrder',
       buttons: [
         {
           text: 'ยกเลิก',
-          cssClass: 'alert-button-cancel',
+          cssClass: 'cancel',
         },
         {
           text: 'ใช่',
-          cssClass: 'alert-button-confirm',
+          cssClass: 'confirm',
         },
       ],
     });
 
     await alert.present();
+  }
+
+  async update() {
+    const modal = this.modalCtrl.create({
+      component: UpdateModalComponent,
+      cssClass: 'updateOrder'
+    });
+    return (await modal).present();
   }
 }

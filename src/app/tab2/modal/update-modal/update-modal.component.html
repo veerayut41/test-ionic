@@ -1,0 +1,55 @@
+<ion-content>
+  <div class="content">
+    <div class="row-1">
+      <div class="update-order">
+        <ion-label>
+          <h2>ยืนยันอัปเดทแก้ไขคำสั่งซื้อ</h2>
+        </ion-label>
+      </div>
+      <div class="track">
+        <ion-label>
+          <h2>#002</h2>
+        </ion-label>
+        <ion-label>
+          <h2>(ทานที่นี่)</h2>
+        </ion-label>
+      </div>
+    </div>
+    <div class="row-2">
+      <div class="col-1" *ngFor="let i of [1,2,3,4]">
+        <div class="order">
+          <div class="no"><ion-label>
+              <h2>X1</h2>
+            </ion-label>
+          </div>
+          <div class="name">
+            <ion-label>
+              <h2>โรตีมะพร้าวอ่อน</h2>
+            </ion-label>
+          </div>
+        </div>
+        <div class="price">
+          <ion-label>
+            <h2>60.00</h2>
+          </ion-label>
+        </div>
+      </div>
+      <div class="col-2">
+        <ion-label>
+          <h2>รวมทั้งหมด</h2>
+        </ion-label>
+        <ion-label>
+          <h2>฿275.00</h2>
+        </ion-label>
+      </div>
+    </div>
+  </div>
+  <div class="btn">
+    <div class="cancel">
+      <ion-button (click)="dismiss()" fill="outline" shape="round" color="dark">ยกเลิก</ion-button>
+    </div>
+    <div class="update">
+      <ion-button (click)="dismiss()" shape="round" color="success">ยืนยัน</ion-button>
+    </div>
+  </div>
+</ion-content>

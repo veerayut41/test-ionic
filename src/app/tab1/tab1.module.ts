@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { HistoryComponent } from './history/history.component';
+import { StatusComponent } from './status/status.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { HistoryComponent } from './history/history.component';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule
   ],
-  declarations: [Tab1Page, HistoryComponent]
+  declarations: [Tab1Page, HistoryComponent, StatusComponent]
 })
 export class Tab1PageModule { }

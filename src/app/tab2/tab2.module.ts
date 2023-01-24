@@ -10,6 +10,7 @@ import { OrderDetailComponent } from './order-detail/order-detail.component';
 import { EditOrderComponent } from './edit-order/edit-order.component';
 import { AddOrderComponent } from './add-order/add-order.component';
 import { FoodListComponent } from './food-list/food-list.component';
+import { UpdateModalComponent } from './modal/update-modal/update-modal.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { FoodListComponent } from './food-list/food-list.component';
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
   ],
-  declarations: [Tab2Page, OrderDetailComponent, EditOrderComponent, AddOrderComponent, FoodListComponent]
+  declarations: [Tab2Page, OrderDetailComponent, EditOrderComponent, AddOrderComponent, FoodListComponent, UpdateModalComponent]
 })
 export class Tab2PageModule { }

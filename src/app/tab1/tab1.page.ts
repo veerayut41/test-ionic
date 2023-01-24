@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActionSheetController, AlertController, ModalController } from '@ionic/angular';
 import { HistoryComponent } from './history/history.component';
+import { StatusComponent } from './status/status.component';
 
 @Component({
   selector: 'app-tab1',
@@ -29,6 +30,15 @@ export class Tab1Page {
 
   newOrder() {
     this.router.navigate(['tabs/tab2']);
+  }
+
+  async ngStatus() {
+    const modal = await this.modalCtrl.create({
+      component: StatusComponent,
+      initialBreakpoint: 0.6
+    });
+
+    return await modal.present();
   }
 
   // customAlertOptions = {

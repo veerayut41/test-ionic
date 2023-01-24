@@ -56,3 +56,15 @@ ion-content {
     --ion-background-color: #ffffff;
   }
 }
+
+ion-modal.updateOrder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 100;
+  width: 370px;
+  height: 500px;
+  border-radius: 10px;
+}
+
